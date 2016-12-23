@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adesuluh.touristguide.MainActivity"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/restaurant"
+        style="@style/CategoryStyle"
+        android:background="@color/category_restaurant"
+        android:text="@string/category_restaurant"/>
+
+    <TextView
+        android:id="@+id/nature"
+        style="@style/CategoryStyle"
+        android:background="@color/category_nature"
+        android:text="@string/category_nature" />
+
+    <TextView
+        android:id="@+id/park"
+        style="@style/CategoryStyle"
+        android:background="@color/category_park"
+        android:text="@string/category_park" />
+
+    <TextView
+        android:id="@+id/beach"
+        style="@style/CategoryStyle"
+        android:background="@color/category_beach"
+        android:text="@string/category_beach" />
+
+</LinearLayout>

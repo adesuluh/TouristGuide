@@ -1,0 +1,16 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Malang Tourist Guide</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_restaurant">Restaurant</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_park">Amusement Park</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_beach">Beach</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_nature">Nature</string>
+</resources>
