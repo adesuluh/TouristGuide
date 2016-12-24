@@ -36,6 +36,8 @@ public class RestaurantActivity extends AppCompatActivity implements AdapterView
         db.child("places").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                strPlace.clear();
+                places.clear();
                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
 //                    Log.d("TAG1", noteDataSnapshot.toString());
                     Place p = ds.getValue(Place.class);
