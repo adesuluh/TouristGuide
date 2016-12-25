@@ -9,9 +9,11 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="214dp"
-            android:src="@drawable/test_place"
-            android:layout_marginBottom="12dp"/>
+            android:layout_height="216dp"
+            android:src="@drawable/placeholder"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/imgView"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -35,7 +37,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/adressPlace"
+            android:id="@+id/addressPlace"
             android:text="Kecamatan Bantur, 65Km South of Malang"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
@@ -77,7 +79,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/longitudePlace"
+            android:id="@+id/latitudePlace"
             android:text="112.5391° E"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
@@ -97,8 +99,29 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/typePlace"
+            android:id="@+id/longitudePlace"
             android:text="8.4034° S"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelDescriptionPlace"
+            android:text="Description : "
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionPlace"
+            android:text="loremloremlorem"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:textSize="14dp"

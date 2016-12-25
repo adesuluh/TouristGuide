@@ -1,5 +1,6 @@
 package adesuluh.touristguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -64,5 +65,8 @@ public class ParkActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         //Toast.makeText(this, "Buka detail " + daftarPark[position], Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, DetailActivity.class);
+        i.putExtra("place", places.get(position));
+        startActivity(i);
     }
 }

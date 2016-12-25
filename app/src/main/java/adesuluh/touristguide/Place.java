@@ -1,9 +1,19 @@
 package adesuluh.touristguide;
 
-public class Place {
+import java.io.Serializable;
+
+public class Place implements Serializable {
     private String id;
     private String name, address, image, type;
-    private String latitude, longitude;
+    private String latitude, longitude, description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getId() {
         return id;
