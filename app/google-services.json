@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "899482496946",
+    "firebase_url": "https://touristguide-7f4a4.firebaseio.com",
+    "project_id": "touristguide-7f4a4",
+    "storage_bucket": "touristguide-7f4a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899482496946:android:39d43ad8c5e31e14",
+        "android_client_info": {
+          "package_name": "adesuluh.touristguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899482496946-f496vpsq285dehl7ue3a44hjn6d3fsp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "adesuluh.touristguide",
+            "certificate_hash": "D86A3DFC027613299358B8467B523F70E2BA4891"
+          }
+        },
+        {
+          "client_id": "899482496946-8jalnuo5drm7ftqma279cdvu2kcdhd5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWrD-Z6TUxHwRg-mk6kiMr8VJ58pvjFMU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899482496946-8jalnuo5drm7ftqma279cdvu2kcdhd5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
