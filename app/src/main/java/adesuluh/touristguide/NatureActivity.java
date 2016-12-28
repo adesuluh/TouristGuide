@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -49,7 +48,7 @@ public class NatureActivity extends AppCompatActivity implements AdapterView.OnI
                     }
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(NatureActivity.this, R.layout.park_list, R.id.ParkCell, strPlace);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(NatureActivity.this, R.layout.nature_list, R.id.NatureCell, strPlace);
                 listNature.setAdapter(adapter);
                 listNature.setOnItemClickListener(NatureActivity.this);
             }

@@ -14,8 +14,6 @@
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_nature">Nature</string>
 
-    <string name="setting">Setting</string>
-    <string name="refresh">Refresh</string>
     <string name="help">Help</string>
 
 </resources>

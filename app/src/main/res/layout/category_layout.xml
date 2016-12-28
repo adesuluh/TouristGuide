@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/restaurant"
+            android:background="@color/category_restaurant"
+            android:padding="16dp"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+
+         <TextView
+             android:id="@+id/restaurant"
+             android:layout_weight="1"
+             style="@style/CategoryStyle"
+            android:background="@color/category_restaurant"
+            android:text="@string/category_restaurant"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/more"
+            android:padding="16dp"
+            android:contentDescription=""
+            android:background="@color/category_restaurant"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/nature"
+            android:background="@color/category_nature"
+            android:padding="16dp"
+            tools:ignore="ContentDescription"
+            />
+
+        <TextView
+            android:id="@+id/nature"
+            style="@style/CategoryStyle"
+            android:background="@color/category_nature"
+            android:text="@string/category_nature"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/more"
+            android:padding="16dp"
+            android:contentDescription=""
+            android:background="@color/category_nature"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/park"
+            android:background="@color/category_park"
+            android:padding="16dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/park"
+            style="@style/CategoryStyle"
+            android:background="@color/category_park"
+            android:text="@string/category_park"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/more"
+            android:padding="16dp"
+            android:contentDescription=""
+            android:background="@color/category_park"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/beach"
+            android:background="@color/category_beach"
+            android:padding="16dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/beach"
+            style="@style/CategoryStyle"
+            android:background="@color/category_beach"
+            android:text="@string/category_beach"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/more"
+            android:padding="16dp"
+            android:contentDescription=""
+            android:background="@color/category_beach"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -48,7 +47,7 @@ public class RestaurantActivity extends AppCompatActivity implements AdapterView
                     }
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(RestaurantActivity.this, R.layout.park_list, R.id.ParkCell, strPlace);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(RestaurantActivity.this, R.layout.restaurants_list, R.id.RestaurantCell, strPlace);
                 listRestaurants.setAdapter(adapter);
                 listRestaurants.setOnItemClickListener(RestaurantActivity.this);
             }

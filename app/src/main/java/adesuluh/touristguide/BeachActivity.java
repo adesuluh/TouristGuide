@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -49,7 +48,7 @@ public class BeachActivity extends AppCompatActivity implements AdapterView.OnIt
                     }
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(BeachActivity.this, R.layout.park_list, R.id.ParkCell, strPlace);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(BeachActivity.this, R.layout.beach_list, R.id.BeachCell, strPlace);
                 listBeach.setAdapter(adapter);
                 listBeach.setOnItemClickListener(BeachActivity.this);
             }

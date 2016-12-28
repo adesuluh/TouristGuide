@@ -31,6 +31,9 @@
         <activity android:name=".DetailActivity">
 
         </activity>
+        <activity android:name=".HelpActivity">
+
+        </activity>
     </application>
 
 </manifest>

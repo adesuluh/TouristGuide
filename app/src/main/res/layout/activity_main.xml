@@ -14,36 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <fragment
+            android:id="@+id/fragment_cat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:name="adesuluh.touristguide.CategoryFragment">
 
-            <TextView
-                android:id="@+id/restaurant"
-                style="@style/CategoryStyle"
-                android:background="@color/category_restaurant"
-                android:text="@string/category_restaurant"/>
-
-            <TextView
-                android:id="@+id/nature"
-                style="@style/CategoryStyle"
-                android:background="@color/category_nature"
-                android:text="@string/category_nature" />
-
-            <TextView
-                android:id="@+id/park"
-                style="@style/CategoryStyle"
-                android:background="@color/category_park"
-                android:text="@string/category_park" />
-
-            <TextView
-                android:id="@+id/beach"
-                style="@style/CategoryStyle"
-                android:background="@color/category_beach"
-                android:text="@string/category_beach" />
-
-        </LinearLayout>
+        </fragment>
 
     </ScrollView>
 </LinearLayout>

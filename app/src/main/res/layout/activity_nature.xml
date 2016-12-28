@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="adesuluh.touristguide.NatureActivity">
+    tools:context="adesuluh.touristguide.NatureActivity"
+    android:background="@color/category_nature">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="Daftar Nature" android:layout_gravity="center"
             android:textSize="24dp"
-            android:textColor="@color/primary_color"
+            android:textColor="@color/font_color"
             android:id="@+id/NatureTextView"
             />
 
@@ -29,6 +30,7 @@
             android:layout_height="match_parent"
             android:id="@+id/NatureListView"
             android:layout_marginTop="18dp"
+            android:textColor="@color/font_color"
             />
 
 
