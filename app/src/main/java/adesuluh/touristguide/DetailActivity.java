@@ -70,10 +70,16 @@ public class DetailActivity extends AppCompatActivity {
     public void openMap(View view) {
         Intent intent = null, chooser = null;
         if (view.getId() == R.id.mapOpenButton) {
-            intent = new Intent(android.content.Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("geo:" + place.getLatitude() + ", " + place.getLongitude()));
-            chooser= Intent.createChooser(intent, "Launch Maps");
-            startActivity(chooser);
+            double latitude = Double.valueOf(place.getLatitude());
+            double longitude = Double.valueOf(place.getLongitude());
+            String label = place.getName();
+            String uriBegin = "geo:" + latitude + "," + longitude;
+            String query = latitude + "," + longitude + "(" + label + ")";
+            String encodedQuery = Uri.encode(query);
+            String uriString = uriBegin + "?q=" + encodedQuery + "&z=16";
+            Uri uri = Uri.parse(uriString);
+            intent = new Intent(android.content.Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         }
     }
 
