@@ -14,13 +14,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. Ade Suluh N. 145150201111103"
+        android:text="1. Ade Suluh N. 145150207111016"
         android:padding="16dp"
         android:textSize="16dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2. Muhammad Ridho K. 145150207111016"
+        android:text="2. Muhammad Ridho K. 145150201111103"
         android:padding="16dp"
         android:textSize="16dp"/>
     <TextView

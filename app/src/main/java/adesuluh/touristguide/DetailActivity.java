@@ -3,13 +3,13 @@ package adesuluh.touristguide;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,6 +21,7 @@ import java.io.InputStream;
 
 public class DetailActivity extends AppCompatActivity {
 
+    Place place;
     private ImageView imgView;
     private TextView titlePlace,
             labelAdressPlace,
@@ -53,7 +54,7 @@ public class DetailActivity extends AppCompatActivity {
         descriptionPlace = (TextView) findViewById(R.id.descriptionPlace);
 
         Intent i = getIntent();
-        Place place = (Place) i.getSerializableExtra("place");
+        place = (Place) i.getSerializableExtra("place");
 
         titlePlace.setText(place.getName());
         addressPlace.setText(place.getAddress());
@@ -64,6 +65,16 @@ public class DetailActivity extends AppCompatActivity {
 
         ImageDownloader imgDownloader = new ImageDownloader(imgView);
         imgDownloader.execute(place.getImage());
+    }
+
+    public void openMap(View view) {
+        Intent intent = null, chooser = null;
+        if (view.getId() == R.id.mapOpenButton) {
+            intent = new Intent(android.content.Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("geo:" + place.getLatitude() + ", " + place.getLatitude()));
+            chooser= Intent.createChooser(intent, "Launch Maps");
+            startActivity(chooser);
+        }
     }
 
     class ImageDownloader extends AsyncTask<String, Void, Bitmap> {
