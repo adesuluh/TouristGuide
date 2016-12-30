@@ -71,7 +71,7 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent = null, chooser = null;
         if (view.getId() == R.id.mapOpenButton) {
             intent = new Intent(android.content.Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("geo:" + place.getLatitude() + ", " + place.getLatitude()));
+            intent.setData(Uri.parse("geo:" + place.getLatitude() + ", " + place.getLongitude()));
             chooser= Intent.createChooser(intent, "Launch Maps");
             startActivity(chooser);
         }
